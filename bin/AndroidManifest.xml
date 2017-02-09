@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="edu.rutgers.winlab.crowdpp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    
+	<uses-permission
+        android:name="android.permission.INTERNET" />    
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />    
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />    
+    <uses-permission
+        android:name="android.permission.BATTERY_STATS" />
+    <uses-permission 
+        android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission 
+	    android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission 
+        android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission 
+	    android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission 
+	    android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission 
+	    android:name="android.permission.WAKE_LOCK" />
+	<uses-permission 
+	    android:name="android.permission.WRITE_SETTINGS" />
+	
+	
+	<!-- baidu -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" />
+	
+    <application
+         android:name="com.baidu.baidulocationdemo.LocationApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"       
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="edu.rutgers.winlab.crowdpp.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name="edu.rutgers.winlab.crowdpp.service.AudioRecordService"></service>
+        <service android:name="edu.rutgers.winlab.crowdpp.service.SpeakerCountService"></service>
+        
+        
+        
+        
+        
+        <!--baidu map  -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+          <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="PoiOsEcVvLsrwqAM7IISH66C" />
+        <activity
+            android:name="com.baidu.baidulocationdemo.MainActivity"
+            android:label="@string/app_name" 
+             android:theme="@android:style/Theme.Black">
+        </activity>
+        <activity android:name="com.baidu.baidulocationdemo.LocationActivityTwo" ></activity>
+        <activity android:name="com.baidu.baidulocationdemo.LocationActivity" ></activity>
+        <activity android:name="com.baidu.baidulocationdemo.NotifyActivity"></activity>
+        <activity android:name="com.baidu.baidulocationdemo.QuestActivity"></activity>
+        <activity android:name="com.baidu.baidulocationdemo.MyLocationMapActivity"></activity>
+              
+    </application>
+
+</manifest>

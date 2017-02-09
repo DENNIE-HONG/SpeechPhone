@@ -1,0 +1,9 @@
+Overview
+Crowdpp has two parts of code: the code in the packages "de.fau.cs.jstk.*" are borrowed from the "jstk" package developed by the Speech Group at the University of Erlangen-Nuremberg, which is primarily used for MFCC feature extraction; the code in the packages "edu.rutgers.winlab.crowdpp.*" is developped by Chenren Xu and Sugang Li:
+"edu.rutgers.winlab.crowdpp.audio" package includes audio recording, data convertion (from byte to float), feature extraction (MFCC and pitch), cross calibration (see "Cross calibration"), and speaker counting algorithm.
+"edu.rutgers.winlab.crowdpp.db" package includes the functions related with sqLite databased operation.
+"edu.rutgers.winlab.crowdpp.sensor" package includes the location tracking service.
+"edu.rutgers.winlab.crowdpp.service" package includes the audio recording and speaker counting services.
+"edu.rutgers.winlab.crowdpp.ui" package includes the Android fragments as the UI interface
+"edu.rutgers.winlab.crowdpp.util" package includes the constants and utility functions (time, math, distance, file process)
+

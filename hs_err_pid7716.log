@@ -1,0 +1,111 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=7716, tid=4012
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_45-b18) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.45-b08 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000259f800):  JavaThread "Unknown thread" [_thread_in_vm, id=4012, stack(0x00000000025d0000,0x00000000026d0000)]
+
+Stack: [0x00000000025d0000,0x00000000026d0000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000259f800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4012, stack(0x00000000025d0000,0x00000000026d0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.009 loading class 0x0000000009d00760 done
+Event: 0.009 loading class 0x0000000009d00180 done
+Event: 0.009 loading class 0x0000000009d00160
+Event: 0.009 loading class 0x0000000009d08270
+Event: 0.009 loading class 0x0000000009d08270 done
+Event: 0.009 loading class 0x0000000009d082a0
+Event: 0.009 loading class 0x0000000009d082a0 done
+Event: 0.009 loading class 0x0000000009d082d0
+Event: 0.009 loading class 0x0000000009d082d0 done
+Event: 0.009 loading class 0x0000000009d00160 done
+
+
+Dynamic libraries:
+0x000000013fed0000 - 0x000000013ff03000 	E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\bin\javaw.exe
+0x00000000774b0000 - 0x0000000077659000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077250000 - 0x0000000077370000 	C:\Windows\system32\kernel32.dll
+0x000007fefd050000 - 0x000007fefd0bc000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefdef0000 - 0x000007fefdfcb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefe230000 - 0x000007fefe2cf000 	C:\Windows\system32\msvcrt.dll
+0x000007fefdac0000 - 0x000007fefdadf000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefdc20000 - 0x000007fefdd4d000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077150000 - 0x000000007724a000 	C:\Windows\system32\USER32.dll
+0x000007fefe680000 - 0x000007fefe6e7000 	C:\Windows\system32\GDI32.dll
+0x000007fefd480000 - 0x000007fefd48e000 	C:\Windows\system32\LPK.dll
+0x000007fefd860000 - 0x000007fefd929000 	C:\Windows\system32\USP10.dll
+0x000007fefba80000 - 0x000007fefbc74000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007fefde70000 - 0x000007fefdee1000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefe2d0000 - 0x000007fefe2fe000 	C:\Windows\system32\IMM32.DLL
+0x000007fefdd60000 - 0x000007fefde69000 	C:\Windows\system32\MSCTF.dll
+0x0000000059360000 - 0x0000000059432000 	E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\msvcr100.dll
+0x0000000050760000 - 0x0000000050f29000 	E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\server\jvm.dll
+0x000007fef89d0000 - 0x000007fef89d9000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefe7d0000 - 0x000007fefe81d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefdd50000 - 0x000007fefdd58000 	C:\Windows\system32\NSI.dll
+0x000007fefd3e0000 - 0x000007fefd41b000 	C:\Windows\system32\WINMM.dll
+0x0000000077670000 - 0x0000000077677000 	C:\Windows\system32\PSAPI.DLL
+0x000000006f370000 - 0x000000006f37f000 	E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\verify.dll
+0x000000006d120000 - 0x000000006d148000 	E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\java.dll
+0x000000005a830000 - 0x000000005a865000 	E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\jdwp.dll
+0x000000006cb90000 - 0x000000006cb98000 	E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\npt.dll
+0x000000006f350000 - 0x000000006f365000 	E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:55654 -Dfile.encoding=UTF-8 -Xbootclasspath/p:E:\Program Files (x86)\adt-bundle-windows-x86_64-20130522\sdk\platforms\android-20\android.jar 
+java_command: de.fau.cs.jstk.framed.Slope
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45
+PATH=E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\bin;E:/Program Files (x86)/MyEclipse Professional 2014/binary/com.sun.java.jdk7.win32.x86_64_1.7.0.u45/bin/../jre/bin/server;E:/Program Files (x86)/MyEclipse Professional 2014/binary/com.sun.java.jdk7.win32.x86_64_1.7.0.u45/bin/../jre/bin;E:/Program Files (x86)/MyEclipse Professional 2014/binary/com.sun.java.jdk7.win32.x86_64_1.7.0.u45/bin/../jre/lib/amd64;E:\Program Files (x86)\adt-bundle-windows-x86_64-20130522\sdk/tools;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;MYSQL_HOME\bin;E:\Program Files (x86)\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\bin;E:\Program Files (x86)\adt-bundle-windows-x86_64-20130522\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 6169652k(2741256k free), swap 12337468k(7078628k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.45-b08) for windows-amd64 JRE (1.7.0_45-b18), built on Oct  8 2013 05:47:22 by "java_re" with unknown MS VC++:1600
+
+time: Wed Oct 28 13:05:45 2015
+elapsed time: 0 seconds
+
